@@ -1,7 +1,12 @@
 aid: atmos-energy
-url: https://raw.githubusercontent.com/api-evangelist/atmos-energy/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/atmos-energy/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.atmos-energy.com
+description: >-
+  Atmos Energy is one of the largest natural-gas-only distributors in the United States,
+  delivering natural gas to residential, commercial, public-authority, and industrial
+  customers across multiple states.
