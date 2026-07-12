@@ -46,6 +46,8 @@ apis:
     - type: Portal
       url: https://www.atmosenergy.com/customer-service/builder-developer-resources/
 common:
+  - type: DomainSecurity
+    url: security/atmos-energy-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/atmos-energy
   - type: Website
