@@ -1,0 +1,97 @@
+generated: '2026-09-18'
+method: probed
+source: live GET of the named /.well-known/ path list on every host this record knows (www.atmosenergy.com, atmosenergy.com);
+  the Account Center runs as a path on www (www.atmosenergy.com/accountcenter/), so no separate API host exists
+hit_count: 0
+note: 'Every named discovery path returned HTTP 404 on www.atmosenergy.com; the apex atmosenergy.com answers every path with
+  a 302 to the same path on www, where it 404s. The negative-control path also returned 404, so these are true absences and
+  not an SPA catch-all (the site is client-rendered, but its 404s are honest 404s). Atmos Energy publishes no security.txt,
+  OIDC/OAuth metadata, api-catalog, ai-plugin, apis.json, or A2A agent card. No WellKnown or SecurityTxt pointer is emitted:
+  this file records an absence, not a served surface.'
+hosts:
+- host: https://www.atmosenergy.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/api-catalog.json
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/atmos-energy-negative-control-9c1e44d2.json
+    status: 404
+- host: https://atmosenergy.com
+  path_echo_control: passed
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/oauth-authorization-server
+  - path: /.well-known/oauth-protected-resource
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/oauth-protected-resource
+  - path: /.well-known/api-catalog
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/api-catalog
+  - path: /.well-known/api-catalog.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/api-catalog.json
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/ai-plugin.json
+  - path: /.well-known/agent-card.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/agent-card.json
+  - path: /.well-known/agent.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/agent.json
+  - path: /.well-known/aauth-resource.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/aauth-resource.json
+  - path: /.well-known/ucp.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/ucp.json
+  - path: /.well-known/acp.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/acp.json
+  - path: /.well-known/apis.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/apis.json
+  - path: /apis.json
+    status: 302
+    redirect: https://www.atmosenergy.com/apis.json
+  - path: /apis.yml
+    status: 302
+    redirect: https://www.atmosenergy.com/apis.yml
+  - path: /.well-known/atmos-energy-negative-control-9c1e44d2.json
+    status: 302
+    redirect: https://www.atmosenergy.com/.well-known/atmos-energy-negative-control-9c1e44d2.json

@@ -35,14 +35,14 @@ tags:
   - Fortune 1000
 url: https://raw.githubusercontent.com/api-evangelist/atmos-energy/refs/heads/main/apis.yml
 created: '2026-03-23'
-modified: '2026-04-19'
+modified: '2026-09-18'
 specificationVersion: '0.23'
 apis:
   - aid: atmos-energy:atmos-energy-account-management
     name: Atmos Energy Account Management
     description: |
       Online account management portal for Atmos Energy customers providing access to billing, payment, usage history, service requests, and account settings for residential and commercial natural gas customers.
-    humanURL: https://www.atmosenergy.com/account-center/
+    humanURL: https://www.atmosenergy.com/customer-service/account-options/
     baseURL: https://www.atmosenergy.com
     tags:
     - Account Management
@@ -51,7 +51,9 @@ apis:
     - Utilities
     properties:
     - type: Documentation
-      url: https://www.atmosenergy.com/account-center/
+      url: https://www.atmosenergy.com/customer-service/account-options/
+    - type: Portal
+      url: https://www.atmosenergy.com/accountcenter/logon/login.html
   - aid: atmos-energy:atmos-energy-builder-portal
     name: Atmos Energy Builder Portal
     description: |
@@ -67,7 +69,7 @@ apis:
     - type: Documentation
       url: https://www.atmosenergy.com/customer-service/builder-developer-resources/
     - type: Portal
-      url: https://www.atmosenergy.com/customer-service/builder-developer-resources/
+      url: https://www.atmosenergy.com/accountcenter/logon/login.html
 common:
   - type: DomainSecurity
     url: security/atmos-energy-domain-security.yml
@@ -76,15 +78,29 @@ common:
   - type: Website
     url: https://www.atmosenergy.com
   - type: Portal
-    url: https://www.atmosenergy.com/account-center/
+    url: https://www.atmosenergy.com/accountcenter/logon/login.html
+  - type: Login
+    url: https://www.atmosenergy.com/accountcenter/logon/login.html
   - type: Contact
-    url: https://www.atmosenergy.com/contact-us/
+    url: https://www.atmosenergy.com/company/contact-us/
   - type: Support
-    url: https://www.atmosenergy.com/customer-service/
+    url: https://www.atmosenergy.com/customer-service/account-options/
   - type: PrivacyPolicy
     url: https://www.atmosenergy.com/privacy-policy/
   - type: TermsOfService
-    url: https://www.atmosenergy.com/terms-of-use/
+    url: https://www.atmosenergy.com/legal-statement/
+  - type: Newsroom
+    url: https://www.atmosenergy.com/news/
+  - type: Careers
+    url: https://www.atmosenergy.com/careers/working-atmos-energy/
+  - type: InvestorRelations
+    url: https://www.investors.atmosenergy.com/
+  - type: LLMsTxt
+    url: llms/atmos-energy-llms.txt
+  - type: Plans
+    url: plans/atmos-energy-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/atmos-energy-rate-limits.yml
   - type: Features
     data:
     - name: Online Bill Pay
@@ -116,3 +132,29 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-18'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Atmos Energy is a regulated natural-gas utility whose only digital surfaces are a login-gated,
+    server-rendered Account Center web app (www.atmosenergy.com/accountcenter/) and a Builder Portal
+    reached through that same login with phone-based registration; every contract and discovery path
+    on the host (/openapi.json, /swagger.json, /graphql, /developers, /llms.txt, /.well-known/*) returns
+    an honest 404 and no api., developer. or status. subdomain resolves.
+  evidence:
+    - url: https://www.atmosenergy.com/openapi.json
+      status: 404
+    - url: https://www.atmosenergy.com/developers
+      status: 404
+    - url: https://www.atmosenergy.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.atmosenergy.com/accountcenter/logon/login.html
+      status: 200
+    - url: https://www.atmosenergy.com/customer-service/builder-developer-resources/
+      status: 200
+  checked: '2026-09-18'

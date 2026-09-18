@@ -1,0 +1,33 @@
+# Atmos Energy
+
+> Atmos Energy is one of the largest natural-gas-only distributors in the United States, serving residential, commercial, public-authority and industrial customers across Texas, Louisiana, Mississippi, Tennessee, Colorado, Kansas, Kentucky and Virginia. It is a regulated utility and publishes NO public developer program, API reference, machine-readable contract (OpenAPI, GraphQL, AsyncAPI), SDK, MCP server or A2A agent card. Its digital surfaces are a login-gated customer Account Center web application and a Builder Portal reached through that same login.
+
+<!-- generated: 2026-09-18 | method: generated | source: apis.yml + pages verified live (HTTP 200) on 2026-09-18 by the API Evangelist enrichment pipeline. Every path probed for a contract or discovery document (/openapi.json, /swagger.json, /graphql, /llms.txt, /.well-known/*) returned 404. -->
+
+## Customer surfaces (web, not API)
+
+- [Account Center login](https://www.atmosenergy.com/accountcenter/logon/login.html): Server-rendered, login-gated web application for billing, payments, usage history, e-bill, text alerts and service requests. No documented API.
+- [Start service (move-in)](https://www.atmosenergy.com/accountcenter/moveininf/bpMoveInStart.html): Online start-service flow inside the Account Center.
+- [Account options](https://www.atmosenergy.com/customer-service/account-options/): Overview of billing and payment options (autopay, budget billing, e-bill, mobile wallet).
+- [Pay your bill](https://www.atmosenergy.com/customer-service/pay-your-bill/): Payment channels for residential and commercial customers.
+
+## Builders and developers (construction, not software)
+
+- [Builder and Developer Resources](https://www.atmosenergy.com/customer-service/builder-developer-resources/): The Builder Portal lets builders and property developers request and schedule natural gas service lines and meter sets. It is accessed by logging in to the Account Center; portal accounts are created by phone with Builder Services (866.332.8667) or by email (builderservices@atmosenergy.com).
+- [Builder / developer request form](https://www.atmosenergy.com/form/builder-developer-request-form/): Web form for new-construction gas service requests.
+- [Residential and commercial builders](https://www.atmosenergy.com/customer-service/residential-and-commercial-builders/): Builder rebate programs by service territory.
+
+## Company
+
+- [Website](https://www.atmosenergy.com/)
+- [Contact us](https://www.atmosenergy.com/company/contact-us/)
+- [Newsroom](https://www.atmosenergy.com/news/)
+- [Gas rates, tariffs and filings](https://www.atmosenergy.com/utility-operationsrates/utility-operations/): Regulator-filed tariffs; there is no API pricing.
+- [Cybersecurity](https://www.atmosenergy.com/safety/cybersecurity-protecting-systems-data-and-critical-infrastructure/): Statement page only; no security.txt or vulnerability disclosure program is published.
+- [Privacy policy](https://www.atmosenergy.com/privacy-policy/)
+- [Legal statement](https://www.atmosenergy.com/legal-statement/)
+- [Investors](https://www.investors.atmosenergy.com/)
+
+## Optional
+
+- [API Evangelist profile (this repository)](https://github.com/api-evangelist/atmos-energy): Independent third-party profile; not affiliated with Atmos Energy.

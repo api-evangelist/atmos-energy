@@ -7,8 +7,9 @@ created: '2026-05-04'
 # Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
 # bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
 method: generated
-modified: '2026-05-05'
-reconciled: false
+modified: '2026-09-18'
+reconciled: true
+limit_count: 0
 tags:
   - Energy
   - Natural Gas
@@ -18,7 +19,9 @@ tags:
 description: Atmos Energy publishes no public API and therefore no public rate-limit documentation.
 sources:
   - https://www.atmosenergy.com/
-notes: No public API surface; this artifact is a structural placeholder.
+  - https://www.atmosenergy.com/customer-service/account-options/
+  - https://www.atmosenergy.com/accountcenter/logon/login.html
+notes: Re-checked 2026-09-18 by the enrichment pipeline — the Account Center (www.atmosenergy.com/accountcenter/) is a server-rendered login-gated web application and the Builder Portal is reached through it; no API reference, rate-limit documentation, or rate-limit response headers are published anywhere on the host. limit_count is an honest zero, not a placeholder guess.
 responseCodes:
   throttled: 429
 limits:
