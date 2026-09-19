@@ -2,23 +2,21 @@
 kin_checks:
   slug: atmos-energy
   schema_version: 0.22.0
-  scored_at: '2026-09-17'
-  run_ts: 2026-09-17T233623
+  scored_at: '2026-09-18'
+  run_ts: 2026-09-18T231945
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.22.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 136
-    earned: 15
+    earned: 17
     partial: 3
-    missed: 78
+    missed: 76
     na: 40
   checks:
   - id: multiple_apis
     status: missed
   - id: well_known_published
-    status: missed
-  - id: llms_txt_published
     status: missed
   - id: apis_json_self_hosted
     status: missed
@@ -97,8 +95,6 @@ kin_checks:
   - id: plans_multiple
     status: missed
   - id: pricing_link
-    status: missed
-  - id: sign_up_present
     status: missed
   - id: terms_of_service
     status: missed
