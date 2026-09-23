@@ -1,7 +1,9 @@
 ---
 title: 'Atmos Energy : Latest CRS Report Demonstrates Commitment ...'
 url: https://www.marketscreener.com/news/atmos-energy-latest-crs-report-demonstrates-commitment-to-our-communities-people-and-operations-ce7f59d8df8ef02d
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Atmos Energy" press release artificial intelligence'
 position: 4
 source: serpapi-google

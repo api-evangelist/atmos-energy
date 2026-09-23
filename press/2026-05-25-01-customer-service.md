@@ -1,7 +1,9 @@
 ---
 title: Customer Service
 url: https://www.atmosenergy.com/news/atmos-energy-ranks-1-customer-satisfaction-residential-natural-gas-service-midwest-south-among/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Atmos Energy" press release artificial intelligence'
 position: 1
 source: serpapi-google

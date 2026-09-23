@@ -1,7 +1,9 @@
 ---
 title: Atmos Energy Raises Profit Forecast on AI Demand
 url: https://www.linkedin.com/posts/anushka-chourasia_atmos-energy-raises-annual-profit-forecast-activity-7457934384726163456--n8q
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Atmos Energy" press release artificial intelligence'
 position: 2
 source: serpapi-google
