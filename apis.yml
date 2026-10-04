@@ -43,7 +43,6 @@ apis:
     description: |
       Online account management portal for Atmos Energy customers providing access to billing, payment, usage history, service requests, and account settings for residential and commercial natural gas customers.
     humanURL: https://www.atmosenergy.com/customer-service/account-options/
-    baseURL: https://www.atmosenergy.com
     tags:
     - Account Management
     - Billing
@@ -59,7 +58,6 @@ apis:
     description: |
       The Atmos Energy Builder Portal enables builders and property developers to request and schedule natural gas service lines and meter sets for new construction projects including residential subdivisions and commercial developments.
     humanURL: https://www.atmosenergy.com/customer-service/builder-developer-resources/
-    baseURL: https://www.atmosenergy.com
     tags:
     - Builder Services
     - Construction
