@@ -1,4 +1,4 @@
-# Atmos Energy (atmos-energy)
+# Atmos Energy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,85 +66,103 @@
 
 Atmos Energy is one of the largest natural-gas-only distributors in the United States, delivering natural gas to residential, commercial, public-authority, and industrial customers across multiple states including Texas, Louisiana, Mississippi, Tennessee, Colorado, Kansas, and Virginia. The company provides online account management, a Builder Portal for developers and contractors, and digital service request capabilities for natural gas connections and meter installations.
 
-**URL:** [https://www.atmosenergy.com](https://www.atmosenergy.com)
+**Areas:** Energy · Natural Gas · Utilities · Infrastructure · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Atmos Energy on APIs.io
 
-## Tags:
+Everything profiled for Atmos Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/atmos-energy/](https://apis.io/providers/atmos-energy/)** — or go straight to one of the APIs or properties below.
 
- - Energy, Natural Gas, Utilities, Infrastructure
+### APIs (2)
 
-## Timestamps
+- [Atmos Energy Account Management](https://apis.io/apis/atmos-energy/atmos-energy-account-management/) — Online account management portal for Atmos Energy customers providing access to billing, payment, usage history, service requests, and account settings for…
+- [Atmos Energy Builder Portal](https://apis.io/apis/atmos-energy/atmos-energy-builder-portal/) — The Atmos Energy Builder Portal enables builders and property developers to request and schedule natural gas service lines and meter sets for new…
 
-- **Created:** 2026-03-23
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Atmos Energy Account Management
-Online account management portal for Atmos Energy customers providing access to billing, payment, usage history, service requests, and account settings for residential and commercial natural gas customers.
+#### Security (1)
 
-**Human URL:** [https://www.atmosenergy.com/account-center/](https://www.atmosenergy.com/account-center/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Atmos Energy Domain Security](https://apis.io/security/atmos-energy/atmos-energy-domain-security/)
 
- - Account Management, Billing, Natural Gas, Utilities
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://www.atmosenergy.com/account-center/)
+- [Atmos Energy Plans Pricing](https://apis.io/plans/atmos-energy/atmos-energy-plans-pricing/)
 
-### Atmos Energy Builder Portal
-The Atmos Energy Builder Portal enables builders and property developers to request and schedule natural gas service lines and meter sets for new construction projects including residential subdivisions and commercial developments.
+#### Rate limits (1)
 
-**Human URL:** [https://www.atmosenergy.com/customer-service/builder-developer-resources/](https://www.atmosenergy.com/customer-service/builder-developer-resources/)
+Published request limits.
 
-#### Tags:
+- [Atmos Energy Rate Limits](https://apis.io/rate-limits/atmos-energy/atmos-energy-rate-limits/)
 
- - Builder Services, Construction, Natural Gas, Service Requests
+#### FinOps (1)
 
-#### Properties
+What the API costs to run, by operation.
 
-- [Documentation](https://www.atmosenergy.com/customer-service/builder-developer-resources/)
-- [Portal](https://www.atmosenergy.com/customer-service/builder-developer-resources/)
+- [Atmos Energy Finops](https://apis.io/finops/atmos-energy/atmos-energy-finops/)
 
-## Common Properties
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.atmosenergy.com)
-- [Portal](https://www.atmosenergy.com/account-center/)
-- [Contact](https://www.atmosenergy.com/contact-us/)
-- [Support](https://www.atmosenergy.com/customer-service/)
-- [PrivacyPolicy](https://www.atmosenergy.com/privacy-policy/)
-- [TermsOfService](https://www.atmosenergy.com/terms-of-use/)
+- [Support](https://www.atmosenergy.com/customer-service/account-options/)
+- [Terms of service](https://www.atmosenergy.com/legal-statement/)
+- [Privacy policy](https://www.atmosenergy.com/privacy-policy/)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Online Bill Pay | Pay natural gas bills online through the Atmos Energy Account Center with options for one-time or recurring autopay. |
-| Usage History | View historical natural gas usage data and billing history through the online account management portal. |
-| Service Requests | Submit service start, stop, and transfer requests online for residential and commercial natural gas accounts. |
-| Builder Portal | Online portal for builders and property developers to schedule new gas service line installations and meter sets for construction projects. |
-| Budget Billing | Enroll in budget billing to spread natural gas costs evenly across 12 months for predictable monthly payments. |
+**Kin Score 19.6** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 65.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 39.5 |
 
-| Name | Description |
-|------|-------------|
-| Residential Account Management | Manage natural gas accounts for homes including billing, payments, usage monitoring, and service requests. |
-| Commercial Account Management | Manage multi-site commercial and industrial natural gas accounts across Atmos Energy service territories. |
-| New Construction Gas Service | Request and schedule new gas service line installations and meter sets for residential subdivisions and commercial developments. |
-| Energy Assistance Programs | Access Atmos Energy Share the Warmth and other assistance programs for customers experiencing financial hardship. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| PaymentService | Integrated payment processing for online bill pay through secure third-party payment processors. |
-| State Energy Assistance Programs | Integration with state-level Low Income Home Energy Assistance Program (LIHEAP) for customer assistance. |
+**Regulatory alignment 11.5** — Energy & Utilities
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/atmos-energy/](https://apis.io/providers/atmos-energy/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Atmos Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/atmos-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
