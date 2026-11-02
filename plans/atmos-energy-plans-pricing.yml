@@ -1,0 +1,67 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Atmos Energy
+providerId: atmos-energy
+created: '2026-05-04'
+# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
+# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
+method: generated
+modified: '2026-09-18'
+reconciled: true
+plan_count: 0
+tags:
+  - Energy
+  - Natural Gas
+  - Utilities
+  - Infrastructure
+description: Atmos Energy is a regulated U.S. natural-gas distribution utility. Its consumer charges
+  (gas commodity, distribution) are set by state public-utility commissions, not by an API/SaaS pricing
+  page. There is no public developer API or developer pricing program. The Builder Portal and customer
+  account management are web tools rather than priced APIs.
+sources:
+  - https://www.atmosenergy.com/
+  - https://www.atmosenergy.com/utility-operationsrates/utility-operations/
+  - https://www.atmosenergy.com/customer-service/account-options/
+notes: Re-checked 2026-09-18 by the enrichment pipeline — no pricing, plans, or developer program page exists on www.atmosenergy.com (every /openapi.json, /docs, /developers path 404s); the only priced surfaces are regulator-filed gas tariffs at /utility-operationsrates/utility-operations/. plan_count is an honest zero. No public developer API or API pricing exists. Customer-facing rates are tariff-based and filed
+  with state regulators per service territory.
+plans:
+  - id: atmos-energy-no-public-api
+    name: No Public API Program
+    type: enterprise
+    description: Atmos exposes a customer self-service portal and a Builder Portal but no public,
+      priced API surface.
+    entries:
+      - label: API Access
+        name: api_access
+        type: subscription
+        metric: varies
+        limit: -1
+        timeFrame: month
+        geo: US
+        unit: 1
+        price: not publicly priced (regulated utility, no API program)
+        userMultiplied: false
+    elements:
+      - name: Customer Account Portal (web)
+      - name: Builder Portal (web)
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+    url: https://apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - negotiated
+  plans:
+  - name: No Public API Program
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - month
